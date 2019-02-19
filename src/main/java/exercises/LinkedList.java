@@ -9,6 +9,9 @@ class Node {
     }
 }
 
+/**
+ * This class implements a singly-linked list.
+ */
 class LinkedList {
     // internal storage
     private Node first = null;
@@ -16,6 +19,8 @@ class LinkedList {
 
     /**
      * Adds the integer `elem` to the end of `this` list.
+     * 
+     * @param elem  The element to be added to the end of the list.
      */
     public void add(int elem) {
         size++;
@@ -41,6 +46,9 @@ class LinkedList {
         }
     }
 
+    /**
+     * Returns the size of the list.
+     */
     public int size() {
         return size;
     }
