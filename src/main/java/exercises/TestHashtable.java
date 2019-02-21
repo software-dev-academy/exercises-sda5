@@ -47,10 +47,21 @@ public class TestHashtable {
 
         */
 
-        //Hashtable table = new Hashtable();
+        Hashtable table = new Hashtable();
         
-        //table.put(p, b);
-        //table.put(q, a);
+        System.out.println("Insert key " + p + " and value " + b);
+        table.put(p, b);
+
+        Address addr = (Address) table.get(p);
+        System.out.println("Result of get: " + addr);
+
+        Address b2 = new Address("Dalagatan", 10);
+        System.out.println("Insert key " + p + " and value " + b2);
+        table.put(p, b2);
+        Address addr2 = (Address) table.get(p);
+        System.out.println("Result of get: " + addr2);
+
+
 
         // Address c = table.get(new Person("Karin"));
 

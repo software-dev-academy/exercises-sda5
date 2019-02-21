@@ -14,4 +14,8 @@ public class Person {
     boolean equals(Person other) {
         return other.name.equals(name) && other.age == age;
     }
+
+    public String toString() {
+        return name;
+    }
 }

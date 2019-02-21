@@ -7,4 +7,7 @@ public class Address {
         this.streetName = streetName;
         this.streetNumber = streetNumber;
     }
+    public String toString() {
+        return streetName + " " + streetNumber;
+    }
 }

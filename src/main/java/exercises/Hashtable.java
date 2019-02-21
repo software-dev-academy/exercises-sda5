@@ -33,13 +33,23 @@ public class Hashtable {
             // 2. insert into array
             array[index] = e;
         } else {
+            // Task 1: Find the correct Entry object
             Entry current = first;
             while (current.next != null) {
+                if (current.key.equals(key)) break;
                 current = current.next;
             }
-            // we are at the last Entry
-            // this means: current.next == null
-            current.next = e;
+            // here, we have found the Entry object that needs
+            // to be changed
+
+            // Task 2: update the correct Entry object
+            if (current.key.equals(key)) {
+                current.value = value;
+            } else {
+                // here, current.next == null!
+                // this means we are at the last Entry
+                current.next = e;
+            }
         }
 
 
