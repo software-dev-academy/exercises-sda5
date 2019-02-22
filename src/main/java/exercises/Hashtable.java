@@ -17,8 +17,9 @@ public class Hashtable {
     private Entry[] array = new Entry[SIZE];
 
     /**
-     * This method puts a key-value pair into the table,
-     * or updates the value if there is already a mapping
+     * Inserts a mapping from a given key to a
+     * given value into 'this' hash table, or updates
+     * the value if there is already a mapping
      * for the given key.
      *
      * @param key    The key to be inserted
