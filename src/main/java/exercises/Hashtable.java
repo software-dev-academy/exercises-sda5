@@ -16,6 +16,14 @@ public class Hashtable {
     private int SIZE = 256;
     private Entry[] array = new Entry[SIZE];
 
+    /**
+     * This method puts a key-value pair into the table,
+     * or updates the value if there is already a mapping
+     * for the given key.
+     *
+     * @param key    The key to be inserted
+     * @param value  The value to be mapped to the given key
+     */
     public void put(Object key, Object value) {
         int hashCode = key.hashCode();
 
