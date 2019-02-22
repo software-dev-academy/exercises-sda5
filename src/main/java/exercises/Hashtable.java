@@ -51,12 +51,6 @@ public class Hashtable {
                 current.next = e;
             }
         }
-
-
-        // The following does not work due to hash collisions:
-        // array[hashCode] = value;
-
-
     }
 
     public Object get(Object key) {
