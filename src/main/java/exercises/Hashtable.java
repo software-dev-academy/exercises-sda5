@@ -16,6 +16,10 @@ public class Hashtable {
     private int SIZE = 256;
     private Entry[] array = new Entry[SIZE];
 
+    /**
+     * Inserts a mapping from a given key to a
+     * given value into 'this' hash table.
+     */
     public void put(Object key, Object value) {
         int hashCode = key.hashCode();
 
