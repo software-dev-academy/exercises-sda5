@@ -18,7 +18,12 @@ public class Hashtable {
 
     /**
      * Inserts a mapping from a given key to a
-     * given value into 'this' hash table.
+     * given value into 'this' hash table, or updates
+     * the value if there is already a mapping
+     * for the given key.
+     *
+     * @param key    The key to be inserted
+     * @param value  The value to be mapped to the given key
      */
     public void put(Object key, Object value) {
         int hashCode = key.hashCode();
